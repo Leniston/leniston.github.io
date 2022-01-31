@@ -226,11 +226,22 @@ figcaption {
 }
 
 .heading-jumbo {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin: 10px 100px;
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 30px;
   line-height: 50px;
   font-weight: 400;
@@ -1031,12 +1042,28 @@ figcaption {
 }
 
 .paragraph {
-  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 100px;
   margin-bottom: 0px;
   margin-left: 100px;
   padding-right: 10px;
   padding-left: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
@@ -1130,6 +1157,29 @@ figcaption {
   font-style: italic;
   -o-object-fit: fill;
   object-fit: fill;
+}
+
+.text-block-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: rgba(251, 255, 0, 0.93);
+  color: #000;
+  font-size: 17px;
+  font-style: italic;
+  text-align: left;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {
